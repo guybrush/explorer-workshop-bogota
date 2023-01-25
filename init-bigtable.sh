@@ -14,6 +14,9 @@ cbt -project $PROJECT -instance $INSTANCE createtable metadata
 cbt -project $PROJECT -instance $INSTANCE createtable metadata_updates
 cbt -project $PROJECT -instance $INSTANCE createtable machine_metrics
 
+cbt -project $PROJECT -instance $INSTANCE createfamily data f
+cbt -project $PROJECT -instance $INSTANCE createfamily data c
+
 cbt -project $PROJECT -instance $INSTANCE createfamily beaconchain at
 cbt -project $PROJECT -instance $INSTANCE createfamily beaconchain pr
 cbt -project $PROJECT -instance $INSTANCE createfamily beaconchain sc
